@@ -1,6 +1,9 @@
 #!/bin/bash
 
 TOMCAT_URL="http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz"
+sudo export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.amzn2.0.1.x86_64/jre/bin/java
+sudo export PATH=${JAVA_HOME}/bin:$PATH
+sudo echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.amzn2.0.1.x86_64/ >>~/.bashrc
 
 function check_java_home {
     if [ -z ${JAVA_HOME} ]
